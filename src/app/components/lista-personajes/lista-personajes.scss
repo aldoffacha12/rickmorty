@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.tarjeta {
+  background-color: #1b1f3a;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  color: white;
+
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+
+  p {
+    margin-top: 8px;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
