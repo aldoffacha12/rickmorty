@@ -1,2 +1,13 @@
-<h1>Lista de personajes</h1>
-<p>Cargando personajes...</p>
+<h1>Listado rick</h1>
+@if (cargando()) {
+  <p>cargando personajes...</p>
+} @else {
+  <div class="grid">
+    @for (personaje of personajes(); track personaje.name) {
+      <div class="tarjeta">
+        <img [src]="personaje.image" [alt]="personaje.name" />
+        <p>{{ personaje.name }}</p>
+      </div>
+    }
+  </div>
+}
